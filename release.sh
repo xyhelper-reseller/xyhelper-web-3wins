@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # set -x
-gf docker main.go -p -t xyhelper/xyhelper-web:latest
+gf docker main.go -p -t xyhelper/xyhelper-web:3-wins
 
 # # 生成版本号 如 1.2.3
 # if [ -z "$1" ]; then

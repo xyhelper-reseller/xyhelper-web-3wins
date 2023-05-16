@@ -42,8 +42,8 @@ export function defaultSetting(): UserState {
   return {
     userInfo: {
       avatar: '/defaultavatar.jpeg',
-      name: '攻城狮老李',
-      description: '访问 <a href="https://xyhelper.cn" class="text-blue-500" target="_blank" >xyhelper.cn</a>',
+      name: '3-wins',
+      description: '访问 <a href="https://3-wins.cn" class="text-blue-500" target="_blank" >3-wins.cn</a>',
       baseURI: 'https://freechat.xyhelper.cn',
       accessToken: randomString,
     },

@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { NSpin } from 'naive-ui'
 import { fetchChatConfig } from '@/api'
-import pkg from '@/../package.json'
+// import pkg from '@/../package.json'
 import { useAuthStore } from '@/store'
 
 interface ConfigState {
@@ -17,7 +17,7 @@ interface ConfigState {
 
 const authStore = useAuthStore()
 
-const kfurl = ref(authStore.session?.kfurl ?? '')
+// const kfurl = ref(authStore.session?.kfurl ?? '')
 
 const loading = ref(false)
 
@@ -44,7 +44,7 @@ onMounted(() => {
 <template>
   <NSpin :show="loading">
     <div class="p-4 space-y-4">
-      <h2 class="text-xl font-bold">
+      <!-- <h2 class="text-xl font-bold">
         Version - {{ config?.version ?? '-' }}
       </h2>
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
@@ -73,7 +73,7 @@ onMounted(() => {
           使用中碰到问题,请扫码联系客服
           <img class="w-[200px] m-auto" :src="kfurl">
         </p>
-      </div>
+      </div> -->
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
       <p v-if="isChatGPTAPI">
         {{ $t("setting.balance") }}：{{ config?.balance ?? '-' }}
