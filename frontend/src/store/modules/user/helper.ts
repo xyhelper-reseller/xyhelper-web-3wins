@@ -41,7 +41,7 @@ export function defaultSetting(): UserState {
   // console.log(error)
   return {
     userInfo: {
-      avatar: '/defaultavatar.jpeg',
+      avatar: '/3-wins.jpeg',
       name: '3-wins',
       description: '访问 <a href="https://3-wins.cn" class="text-blue-500" target="_blank" >3-wins.cn</a>',
       baseURI: 'https://freechat.xyhelper.cn',
